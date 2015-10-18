@@ -3,7 +3,7 @@ require 'crg_scoreboard_extractor'
 require_relative 'exporters/team_exporter'
 require_relative 'exporters/clock_exporter'
 
-root_uri = '/Users/marcos/Downloads/crg-scoreboard_3.2.3'
+root_uri = ARGV[0]
 jam_clock = ClockExporter.new('./data/jam')
 period_clock = ClockExporter.new('./data/period')
 team1 = TeamExporter.new('./data/team1', root_uri)
